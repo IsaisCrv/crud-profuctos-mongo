@@ -1,6 +1,7 @@
 package com.icrv.crud.models;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -12,7 +13,7 @@ public class ProductDTO {
 	private String _id;
 	private String name;
 	private Double price;
-	private LocalDate expiry_date;
+	private Date expiry_date;
 
 	public String get_id() {
 		return _id;
@@ -38,11 +39,11 @@ public class ProductDTO {
 		this.price = price;
 	}
 
-	public LocalDate getExpiry_date() {
+	public Date getExpiry_date() {
 		return expiry_date;
 	}
 
-	public void setExpiry_date(LocalDate expiry_date) {
+	public void setExpiry_date(Date expiry_date) {
 		this.expiry_date = expiry_date;
 	}
 
